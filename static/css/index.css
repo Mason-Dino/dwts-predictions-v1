@@ -8,6 +8,12 @@ h1 {
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+h2 {
+    text-align: center;
+    color: #FFFFFF;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
 .overall {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -22,7 +28,23 @@ h1 {
     gap: 7px;
 }
 
+.parent-guess {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 7px;
+}
+
+.parent-cards.drag-over,
+.parent-guess.drag-over {
+    background-color: rgba(212, 175, 55, 0.1);
+    border: 2px dashed #D4AF37;
+    border-radius: 10px;
+}
+
 .card {
+    cursor: grab;
+
     display: flex;
     flex-direction: column;
     width: 75%;
@@ -32,6 +54,15 @@ h1 {
     border-radius: 10px;
     padding: 10px;
     align-items: center;
+    user-select: none;
+}
+
+.card:active {
+  cursor: grabbing;
+}
+
+.card.dragging {
+  opacity: 0.5;
 }
 
 .card > h2 {
