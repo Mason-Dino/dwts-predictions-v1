@@ -3,10 +3,38 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Lato:wght@400;600&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
         <title>Hello World</title>
     </head>
     <body>
         <h1>Dancing with the Stars</h1>
+        <div class="parent">
+            <div class="card">
+                <img src="{{ url_for('static', filename='images/robert.jpg') }}" alt="Dancing with the Stars Press Picutre of Robert">
+                <h2>Robert Irwin</h2>
+                <p>Witney Carson</p>
+            </div>
+            <div class="card">
+                <img src="{{ url_for('static', filename='images/jordan.jpg') }}" alt="Dancing with the Stars Press Picutre of jordan">
+                <h2>Jordan Chiles</h2>
+                <p>Ezra Sosa</p>
+            </div>
+            <div class="card">
+                <img src="{{ url_for('static', filename='images/alix.jpg') }}" alt="Dancing with the Stars Press Picutre of alix">
+                <h2>Alix Earle</h2>
+                <p>Val Chmerkovskiy</p>
+            </div>
+            <div class="card">
+                <img src="{{ url_for('static', filename='images/elaine.jpg') }}" alt="Dancing with the Stars Press Picutre of elaine">
+                <h2>Elaine Hendrix</h2>
+                <p>Alan Bersten</p>
+            </div>
+            <div class="card">
+                <img src="{{ url_for('static', filename='images/dylan.jpg') }}" alt="Dancing with the Stars Press Picutre of dylan">
+                <h2>Dylan Efron</h2>
+                <p>Daniella Karagach</p>
+            </div>
+        </div>
     </body>
 </html>

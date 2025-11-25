@@ -1,7 +1,44 @@
+body {
+    background-color: #1A1A4E;
+}
+
 h1 {
+    text-align: center;
+    color: #FFFFFF;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }
 
-body {
-    background-color: aquamarine;
+.parent {
+    display: flex;
+    flex-direction: column;
+    gap: 7px
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    background-color: #FFFFFF;
+    border-color: #D4AF37;
+    border-width: 2;
+    border-radius: 10px;
+    padding: 10px;
+    align-items: center;
+}
+
+.card > h2 {
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 7px;
+    margin: 4px
+}
+
+.card > p {
+    font-family: 'Lato', sans-serif;
+    margin-bottom: 3px;
+    margin: 1px;
+}
+
+.card > img {
+    width: 76%;
+    border-radius: 10px;
 }
